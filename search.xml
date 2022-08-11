@@ -1,6 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>我的建站过程</title>
+    <url>/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/</url>
+    <content><![CDATA[<h1 id="HEXO-GITHUB搭建网站"><a href="#HEXO-GITHUB搭建网站" class="headerlink" title="HEXO+GITHUB搭建网站"></a>HEXO+GITHUB搭建网站</h1><h2 id="搭建网站所需环境"><a href="#搭建网站所需环境" class="headerlink" title="搭建网站所需环境"></a>搭建网站所需环境</h2><h3 id="git"><a href="#git" class="headerlink" title="git"></a>git</h3><p><a href="https://git-scm.com/download/win">git下载地址</a></p>
+<h4 id="设置用户名和邮箱"><a href="#设置用户名和邮箱" class="headerlink" title="设置用户名和邮箱"></a>设置用户名和邮箱</h4><span id="more"></span>
+
+<p>windows应该是微软帐号的用户名和邮箱</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name [usernames]</span><br><span class="line">git config --global user.email [email]</span><br></pre></td></tr></table></figure>
+
+<h3 id="nodejs"><a href="#nodejs" class="headerlink" title="nodejs"></a>nodejs</h3><p><a href="https://nodejs.org/en/">nodejs下载地址</a></p>
+<h4 id="检查是否下载成功"><a href="#检查是否下载成功" class="headerlink" title="检查是否下载成功"></a>检查是否下载成功</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line">git --version</span><br></pre></td></tr></table></figure>
+
+<h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h3><h4 id="下载hexo"><a href="#下载hexo" class="headerlink" title="下载hexo"></a>下载hexo</h4><p>打开gitbash</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+
+<h4 id="检查是否下载成功-1"><a href="#检查是否下载成功-1" class="headerlink" title="检查是否下载成功"></a>检查是否下载成功</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo version</span><br></pre></td></tr></table></figure>
+
+<h2 id="搭建网站"><a href="#搭建网站" class="headerlink" title="搭建网站"></a>搭建网站</h2><h3 id="初始化网站"><a href="#初始化网站" class="headerlink" title="初始化网站"></a>初始化网站</h3><ol>
+<li><p>在电脑的某个位置，创建一个空文件夹blog</p>
+</li>
+<li><p>在blog文件夹下，右键-&gt;git bash</p>
+</li>
+<li><p>初始化hexo框架</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Generate</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>开启端口</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811172040349.png" alt="image-20220811172040349" style="zoom:80%;"></li>
+</ol>
+<p>​		通过localhost:4000端口就能访问到自己搭建的网站了</p>
+<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><h3 id="生成ssh-key"><a href="#生成ssh-key" class="headerlink" title="生成ssh key"></a>生成ssh key</h3><p>1.右键打开gitbash</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;github绑定的邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>2.我的电脑进入</p>
+   <img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811164803578.png" alt="image-20220811164803578" style="zoom: 67%;">
+
+<p>3.ctrl+a,ctrl+c复制key</p>
+<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811172323830.png" alt="image-20220811172323830" style="zoom:80%;">
+
+<p>4.打开github</p>
+<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811163518289.png" alt="image-20220811163518289" style="zoom:50%;">
+
+<p>5.<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811164209843.png" alt="image-20220811164209843" style="zoom:50%;"></p>
+<p>6.添加key</p>
+<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811165343200.png" alt="image-20220811165343200" style="zoom:50%;">
+
+<p>7.成功！</p>
+<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811165425595.png" alt="image-20220811165425595" style="zoom:50%;">
+
+<h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><ol>
+<li><p>​                             <img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811165725237.png" alt="image-20220811165725237" style="zoom: 50%;"></p>
+</li>
+<li><p>​                                   	  <img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811170014012.png" alt="image-20220811170014012" style="zoom:50%;"></p>
+</li>
+</ol>
+<p>3.复制仓库地址</p>
+<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811170129859.png" alt="image-20220811170129859" style="zoom:50%;">
+
+<h3 id="修改-config-yml"><a href="#修改-config-yml" class="headerlink" title="修改_config.yml"></a>修改_config.yml</h3><p>1.右键vscode打开，直接到最后一行</p>
+<p>2.如下图增加修改</p>
+<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811170745602.png" alt="image-20220811170745602" style="zoom:80%;">
+
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>1.同样在github的setting页面</p>
+<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811204917369.png" alt="image-20220811204917369" style="zoom:80%;">
+
+<p>2.创造私钥，记得保存<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811205309399.png" alt="image-20220811205309399" style="zoom:80%;"></p>
+<p>3.在blog文件夹下，右键-&gt;git bash</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>4.之后会弹出验证帐号的窗口，输入用户名和私钥</p>
+<p>5.部署成功！</p>
+<h2 id="如果感觉有用的话，请作者喝个咖啡吧-bushi"><a href="#如果感觉有用的话，请作者喝个咖啡吧-bushi" class="headerlink" title="如果感觉有用的话，请作者喝个咖啡吧(bushi"></a>如果感觉有用的话，请作者喝个咖啡吧(bushi</h2>]]></content>
+      <categories>
+        <category>建站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>linux</title>
     <url>/2022/08/11/linux/</url>
     <content><![CDATA[<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><h2 id="0-Linux初步认知"><a href="#0-Linux初步认知" class="headerlink" title="0.Linux初步认知"></a>0.Linux初步认知</h2><h3 id="系统的认知"><a href="#系统的认知" class="headerlink" title="系统的认知"></a>系统的认知</h3><p>什么是系统？</p>
@@ -667,88 +749,6 @@
 ]]></content>
       <categories>
         <category>Linux</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>我的建站过程</title>
-    <url>/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/</url>
-    <content><![CDATA[<h1 id="HEXO-GITHUB搭建网站"><a href="#HEXO-GITHUB搭建网站" class="headerlink" title="HEXO+GITHUB搭建网站"></a>HEXO+GITHUB搭建网站</h1><h2 id="搭建网站所需环境"><a href="#搭建网站所需环境" class="headerlink" title="搭建网站所需环境"></a>搭建网站所需环境</h2><h3 id="git"><a href="#git" class="headerlink" title="git"></a>git</h3><p><a href="https://git-scm.com/download/win">git下载地址</a></p>
-<h4 id="设置用户名和邮箱"><a href="#设置用户名和邮箱" class="headerlink" title="设置用户名和邮箱"></a>设置用户名和邮箱</h4><span id="more"></span>
-
-<p>windows应该是微软帐号的用户名和邮箱</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name [usernames]</span><br><span class="line">git config --global user.email [email]</span><br></pre></td></tr></table></figure>
-
-<h3 id="nodejs"><a href="#nodejs" class="headerlink" title="nodejs"></a>nodejs</h3><p><a href="https://nodejs.org/en/">nodejs下载地址</a></p>
-<h4 id="检查是否下载成功"><a href="#检查是否下载成功" class="headerlink" title="检查是否下载成功"></a>检查是否下载成功</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line">git --version</span><br></pre></td></tr></table></figure>
-
-<h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h3><h4 id="下载hexo"><a href="#下载hexo" class="headerlink" title="下载hexo"></a>下载hexo</h4><p>打开gitbash</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-
-<h4 id="检查是否下载成功-1"><a href="#检查是否下载成功-1" class="headerlink" title="检查是否下载成功"></a>检查是否下载成功</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo version</span><br></pre></td></tr></table></figure>
-
-<h2 id="搭建网站"><a href="#搭建网站" class="headerlink" title="搭建网站"></a>搭建网站</h2><h3 id="初始化网站"><a href="#初始化网站" class="headerlink" title="初始化网站"></a>初始化网站</h3><ol>
-<li><p>在电脑的某个位置，创建一个空文件夹blog</p>
-</li>
-<li><p>在blog文件夹下，右键-&gt;git bash</p>
-</li>
-<li><p>初始化hexo框架</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Generate</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>开启端口</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811172040349.png" alt="image-20220811172040349" style="zoom:80%;"></li>
-</ol>
-<p>​		通过localhost:4000端口就能访问到自己搭建的网站了</p>
-<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><h3 id="生成ssh-key"><a href="#生成ssh-key" class="headerlink" title="生成ssh key"></a>生成ssh key</h3><p>1.右键打开gitbash</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;github绑定的邮箱&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>2.我的电脑进入</p>
-   <img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811164803578.png" alt="image-20220811164803578" style="zoom: 67%;">
-
-<p>3.ctrl+a,ctrl+c复制key</p>
-<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811172323830.png" alt="image-20220811172323830" style="zoom:80%;">
-
-<p>4.打开github</p>
-<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811163518289.png" alt="image-20220811163518289" style="zoom:50%;">
-
-<p>5.<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811164209843.png" alt="image-20220811164209843" style="zoom:50%;"></p>
-<p>6.添加key</p>
-<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811165343200.png" alt="image-20220811165343200" style="zoom:50%;">
-
-<p>7.成功！</p>
-<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811165425595.png" alt="image-20220811165425595" style="zoom:50%;">
-
-<h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><ol>
-<li><p>​                             <img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811165725237.png" alt="image-20220811165725237" style="zoom: 50%;"></p>
-</li>
-<li><p>​                                   	  <img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811170014012.png" alt="image-20220811170014012" style="zoom:50%;"></p>
-</li>
-</ol>
-<p>3.复制仓库地址</p>
-<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811170129859.png" alt="image-20220811170129859" style="zoom:50%;">
-
-<h3 id="修改-config-yml"><a href="#修改-config-yml" class="headerlink" title="修改_config.yml"></a>修改_config.yml</h3><p>1.右键vscode打开，直接到最后一行</p>
-<p>2.如下图增加修改</p>
-<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811170745602.png" alt="image-20220811170745602" style="zoom:80%;">
-
-<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>1.同样在github的setting页面</p>
-<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811204917369.png" alt="image-20220811204917369" style="zoom:80%;">
-
-<p>2.创造私钥，记得保存<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811205309399.png" alt="image-20220811205309399" style="zoom:80%;"></p>
-<p>3.在blog文件夹下，右键-&gt;git bash</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>4.之后会弹出验证帐号的窗口，输入用户名和私钥</p>
-<p>5.部署成功！</p>
-<h2 id="如果感觉有用的话，请作者喝个咖啡吧-bushi"><a href="#如果感觉有用的话，请作者喝个咖啡吧-bushi" class="headerlink" title="如果感觉有用的话，请作者喝个咖啡吧(bushi"></a>如果感觉有用的话，请作者喝个咖啡吧(bushi</h2>]]></content>
-      <categories>
-        <category>建站</category>
       </categories>
   </entry>
 </search>
