@@ -1,6 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HEXO配置主题</title>
+    <url>/2022/08/12/HEXO%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="基于NexT主题的配置"><a href="#基于NexT主题的配置" class="headerlink" title="基于NexT主题的配置"></a>基于NexT主题的配置</h1>]]></content>
+      <categories>
+        <category>建站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>git基础</title>
+    <url>/2022/08/12/git%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h1 id="GIT"><a href="#GIT" class="headerlink" title="GIT"></a>GIT</h1><h2 id="为什么要用git？"><a href="#为什么要用git？" class="headerlink" title="为什么要用git？"></a>为什么要用git？</h2><h3 id="1-版本控制"><a href="#1-版本控制" class="headerlink" title="1.版本控制"></a>1.版本控制</h3><ul>
+<li><p>保留了一切的历史，可以让代码迅速恢复到你想commit的位置</p>
+<p>1——2——3</p>
+</li>
+<li><p>组织和保护你的源代码和文档</p>
+</li>
+</ul>
+<span id="more"></span>
+
+<h3 id="2-协作开发"><a href="#2-协作开发" class="headerlink" title="2.协作开发"></a>2.协作开发</h3><ul>
+<li>实现跨区域多人协同开发</li>
+</ul>
+<h2 id="GIT历史"><a href="#GIT历史" class="headerlink" title="GIT历史"></a>GIT历史</h2><p>Git是免费、开源的，最初Git是为辅助 Linux 内核开发的，来替代 BitKeeper！</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812152056702.png" alt="image-20220812152056702" style="zoom:67%;">
+
+<p>Linux: linux,git之父</p>
+<h2 id="配置GIT"><a href="#配置GIT" class="headerlink" title="配置GIT"></a>配置GIT</h2><h3 id="1-下载GIT"><a href="#1-下载GIT" class="headerlink" title="1.下载GIT"></a>1.下载GIT</h3><p>打开 <a href="https://git-scm.com/">git官网</a>，下载git对应操作系统的版本。</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812153120397.png" alt="image-20220812153120397" style="zoom: 50%;">
+
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812153940550.png" alt="image-20220812153940550" style="zoom:80%;">
+
+<p>之后无脑下一步就好了！</p>
+<h3 id="2-设置用户名和邮箱"><a href="#2-设置用户名和邮箱" class="headerlink" title="2.设置用户名和邮箱"></a>2.设置用户名和邮箱</h3><p>windows应该是微软帐号的用户名和邮箱</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name [usernames]</span><br><span class="line">git config --global user.email [email]</span><br></pre></td></tr></table></figure>
+
+<h2 id="GIT项目搭建"><a href="#GIT项目搭建" class="headerlink" title="GIT项目搭建"></a>GIT项目搭建</h2><h3 id="本地仓库搭建"><a href="#本地仓库搭建" class="headerlink" title="本地仓库搭建"></a>本地仓库搭建</h3><p>创建一个新文件夹，右键git bash</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<p>会出现.git文件，如果没有出现打开隐藏文件</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812162714326.png" alt="image-20220812162714326" style="zoom:67%;">
+
+<p>直接在IDE里用这个文件夹创建项目就行了</p>
+<h3 id="远程仓库搭建"><a href="#远程仓库搭建" class="headerlink" title="远程仓库搭建"></a>远程仓库搭建</h3><h4 id="1-选择托管平台"><a href="#1-选择托管平台" class="headerlink" title="1.选择托管平台"></a>1.选择托管平台</h4><ul>
+<li>github</li>
+<li>gitee</li>
+</ul>
+<p>github 是有墙的，比较慢，在国内的话，我们一般使用 gitee ，公司中有时候会搭建自己的gitlab服务器</p>
+<p>这里我选择github做演示</p>
+<h4 id="2-生成ssh-key"><a href="#2-生成ssh-key" class="headerlink" title="2.生成ssh key"></a>2.生成ssh key</h4><p>1.右键打开gitbash</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;github绑定的邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>2.我的电脑进入</p>
+   <img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220811164803578.png" alt="image-20220811164803578" style="zoom: 67%;">
+
+<p>3.ctrl+a,ctrl+c复制key</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220811172323830.png" alt="image-20220811172323830" style="zoom:80%;">
+
+<p>4.打开github</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220811163518289.png" alt="image-20220811163518289" style="zoom:50%;">
+
+<p>5.<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220811164209843.png" alt="image-20220811164209843" style="zoom:50%;"></p>
+<p>6.添加key</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220811165343200.png" alt="image-20220811165343200" style="zoom:50%;">
+
+<p>7.成功！</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220811165425595.png" alt="image-20220811165425595" style="zoom:50%;">
+
+<h4 id="3-创建github仓库"><a href="#3-创建github仓库" class="headerlink" title="3.创建github仓库"></a>3.创建github仓库</h4><p>1.<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812155226373.png" alt="image-20220812155226373" style="zoom:50%;"></p>
+<p>2.<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812155618612.png" alt="image-20220812155618612" style="zoom: 67%;"></p>
+<h4 id="4-clone仓库到要上传代码的文件夹"><a href="#4-clone仓库到要上传代码的文件夹" class="headerlink" title="4.clone仓库到要上传代码的文件夹"></a>4.clone仓库到要上传代码的文件夹</h4><p>1.进入到刚刚创建的仓库</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812160134656.png" alt="image-20220812160134656" style="zoom:67%;">
+
+<p>2.新建一个文件夹，右键git bash</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/Jameszych0/Algorithm.git</span><br></pre></td></tr></table></figure>
+
+<p>3.把文件夹的内容复制到要git的文件夹</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812160750912.png" alt="image-20220812160750912" style="zoom:67%;">
+
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812160808977.png" alt="image-20220812160808977" style="zoom:50%;">
+
+<p>这样就能使用git上传代码了！</p>
+<h2 id="GIT的基础介绍"><a href="#GIT的基础介绍" class="headerlink" title="GIT的基础介绍"></a>GIT的基础介绍</h2><h3 id="GIT基础理论"><a href="#GIT基础理论" class="headerlink" title="GIT基础理论"></a>GIT基础理论</h3><p>工作流程：———add————commit————push</p>
+<p>工作区域：工作区——&gt;暂存区——&gt;本地版本库——&gt;远程的git仓库</p>
+<p>文件状态：untracked—tracked——commit</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812221637690.png" alt="image-20220812221637690" style="zoom:80%;">
+
+<ul>
+<li><strong>工作区：</strong>就是你在电脑里能看到的目录。</li>
+<li><strong>暂存区：</strong>英文叫 stage 或 index。一般存放在 <strong>.git</strong> 目录下的 index 文件（.git&#x2F;index）中，所以我们把暂存区有时也叫作索引（index）。</li>
+<li><strong>版本库：</strong>工作区有一个隐藏目录 <strong>.git</strong>，这个不算工作区，而是 Git 的版本库。</li>
+</ul>
+<h3 id="GIT基础操作"><a href="#GIT基础操作" class="headerlink" title="GIT基础操作"></a>GIT基础操作</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add . 					<span class="comment">#添加所有文件文件到暂存区</span></span><br><span class="line"></span><br><span class="line">git add -A					<span class="comment">#添加修改的文件到暂存区——一般用这个就可以了</span></span><br><span class="line"></span><br><span class="line">git commit -m <span class="string">&quot;消息内容&quot;</span>	 <span class="comment">#提交暂存区中的内容到本地版本库 -m 提交信息</span></span><br><span class="line"></span><br><span class="line">git push					<span class="comment">#把代码push到远程仓库</span></span><br><span class="line"></span><br><span class="line">git <span class="built_in">log</span> 					<span class="comment">#查看历史版本</span></span><br><span class="line"></span><br><span class="line">git checkout -- 文件名       <span class="comment">#如果误删了某个文件，可通过这个命令来找回</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><h4 id="分支概念"><a href="#分支概念" class="headerlink" title="分支概念"></a>分支概念</h4><p>在某些文件不一定需要的时候，可以创建一个新的分支，之后再考虑是否合并。</p>
+<h4 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h4><ul>
+<li>创建分支</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git branch 分支名        <span class="comment">#创建新分支，但不跳转</span></span><br><span class="line">git checkout -b 分支名   <span class="comment">#创建新分支并跳转</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>查看分支</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git branch</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>切换分支</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git checkout 分支名</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>删除分支</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git branch -D 分支名</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>合并分支</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git merge 分支名          <span class="comment">#把别的分支合并过来</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="使用GIT"><a href="#使用GIT" class="headerlink" title="使用GIT"></a>使用GIT</h2><p>接下来带你们实操一遍！</p>
+<h3 id="本地仓库"><a href="#本地仓库" class="headerlink" title="本地仓库"></a>本地仓库</h3><p>可以先使用本地仓库来实践</p>
+<h4 id="1-初始化仓库"><a href="#1-初始化仓库" class="headerlink" title="1.初始化仓库"></a>1.初始化仓库</h4><p>创建一个新文件夹，右键git bash</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812205813445.png" alt="image-20220812205813445" style="zoom: 50%;">
+
+<h4 id="2-提交文件"><a href="#2-提交文件" class="headerlink" title="2.提交文件"></a>2.提交文件</h4><p>创建一个文本文件，并编辑一下</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812210914382.png" alt="image-20220812210914382" style="zoom: 67%;">
+
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812211933900.png" alt="image-20220812211933900" style="zoom:67%;">
+
+<p>这个时候我们查看一下文件的状态，此时这个文件是<strong>untracked</strong></p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812213555788.png" alt="image-20220812213555788" style="zoom:67%;">
+
+<p>把文件提add暂存区，并查看文件状态</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812212520221.png" alt="image-20220812212520221" style="zoom:67%;">
+
+<p>把文件commit到本地版本库,并查看文件状态</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812212913060.png" alt="image-20220812212913060" style="zoom:67%;">
+
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812213031777.png" alt="image-20220812213031777" style="zoom: 67%;">
+
+<h4 id="3-查看历史版本"><a href="#3-查看历史版本" class="headerlink" title="3.查看历史版本"></a>3.查看历史版本</h4><p>我们再次按照上面步骤提交一次文件，让历史版本更加鲜明</p>
+<p>PS：可用**git commit -a -m “消息内容”**省去提交到暂存区的步骤</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812215633456.png" alt="image-20220812215633456" style="zoom:67%;">
+
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812215617672.png" alt="image-20220812215617672" style="zoom:67%;">
+
+<p><strong>按q退出</strong></p>
+<h4 id="4-分支"><a href="#4-分支" class="headerlink" title="4.分支"></a>4.分支</h4><p>创建一个新的分支，并查看分支</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812223854296.png" alt="image-20220812223854296" style="zoom:67%;">
+
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812223817603.png" alt="image-20220812223817603" style="zoom:80%;">
+
+<p>切换分支，并查看文件</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812224222407.png" alt="image-20220812224222407" style="zoom: 67%;">
+
+<p>&#x3D;&#x3D;其它分支的文件删除其它分支没有影响&#x3D;&#x3D;</p>
+<p>我们在vice分支删除文件，并**git commit -am “删除文件”**，回到主分支那个文件还在</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220813101947724.png" alt="image-20220813101947724" style="zoom:50%;">
+
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220813102010742.png" alt="image-20220813102010742" style="zoom:50%;">
+
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220813102024967.png" alt="image-20220813102024967" style="zoom:50%;">
+
+<p>在vice分支修改文件，并提交</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220813094645535.png" alt="image-20220813094645535" style="zoom:67%;">
+
+<p>我们切换到主支master，这时候master还没有这条修改，我们合并一下</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220813094852536.png" alt="image-20220813094852536" style="zoom:50%;">
+
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220813094922538.png" alt="image-20220813094922538" style="zoom:67%;">
+
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220813094948727.png" alt="image-20220813094948727" style="zoom:50%;">
+
+<p>在两个分支对文件的同一行进行修改时，到merge的时候，我们需要手动修改文件，再merge</p>
+<p><img src="/git%E5%9F%BA%E7%A1%80/image-20220813095750853.png" alt="image-20220813095750853"></p>
+<p>删除分支</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812224741276.png" alt="image-20220812224741276" style="zoom:67%;">
+
+<p>最后我们再来查看一下<strong>git log</strong></p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220813100042013.png" alt="image-20220813100042013" style="zoom:80%;">
+
+<h3 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h3><p>这里用vscode做演示</p>
+<h4 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h4><p>这里建议还是使用命令行来操作，这样无论在哪个IDE里都不需要增加学习成本</p>
+<p>和本地仓库操作差不多，这里就不做过多的演示了，主要讲一下push和pull</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812163532661.png" alt="image-20220812163532661" style="zoom:150%;">
+
+<p>我现在修改一下代码</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220812164102975.png" alt="image-20220812164102975" style="zoom:150%;">
+
+<h4 id="查看远程仓库"><a href="#查看远程仓库" class="headerlink" title="查看远程仓库"></a>查看远程仓库</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
+
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220813103115412.png" alt="image-20220813103115412" style="zoom:67%;">
+
+<h4 id="git-push"><a href="#git-push" class="headerlink" title="git push"></a>git push</h4><p>第一次git push需要输入帐号和个人生成token，需要我们在github上设置一下</p>
+<p>1.同样在github的setting页面</p>
+<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220811204917369.png" alt="image-20220811204917369" style="zoom:80%;">
+
+<p>2.创造个人访问token，记得保存<img src="/2022/08/12/git%E5%9F%BA%E7%A1%80/image-20220811205309399.png" alt="image-20220811205309399" style="zoom:80%;"></p>
+<h4 id="git-pull"><a href="#git-pull" class="headerlink" title="git pull"></a>git pull</h4><p>拉取远程仓库的文件</p>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+  </entry>
+  <entry>
     <title>我的建站过程</title>
     <url>/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<h1 id="HEXO-GITHUB搭建网站"><a href="#HEXO-GITHUB搭建网站" class="headerlink" title="HEXO+GITHUB搭建网站"></a>HEXO+GITHUB搭建网站</h1><h2 id="搭建网站所需环境"><a href="#搭建网站所需环境" class="headerlink" title="搭建网站所需环境"></a>搭建网站所需环境</h2><h3 id="git"><a href="#git" class="headerlink" title="git"></a>git</h3><p><a href="https://git-scm.com/download/win">git下载地址</a></p>
@@ -69,13 +274,13 @@
 <h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>1.同样在github的setting页面</p>
 <img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811204917369.png" alt="image-20220811204917369" style="zoom:80%;">
 
-<p>2.创造私钥，记得保存<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811205309399.png" alt="image-20220811205309399" style="zoom:80%;"></p>
+<p>2.创造个人访问token，记得保存<img src="/2022/08/11/%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811205309399.png" alt="image-20220811205309399" style="zoom:80%;"></p>
 <p>3.在blog文件夹下，右键-&gt;git bash</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
-<p>4.之后会弹出验证帐号的窗口，输入用户名和私钥</p>
+<p>4.之后会弹出验证帐号的窗口，输入用户名和个人访问token</p>
 <p>5.部署成功！</p>
 <h2 id="如果感觉有用的话，请作者喝个咖啡吧-bushi"><a href="#如果感觉有用的话，请作者喝个咖啡吧-bushi" class="headerlink" title="如果感觉有用的话，请作者喝个咖啡吧(bushi"></a>如果感觉有用的话，请作者喝个咖啡吧(bushi</h2>]]></content>
       <categories>
