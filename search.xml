@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>HEXO配置主题</title>
-    <url>/2022/08/12/b_HEXO%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="基于NexT主题的配置"><a href="#基于NexT主题的配置" class="headerlink" title="基于NexT主题的配置"></a>基于NexT主题的配置</h1>]]></content>
-      <categories>
-        <category>建站</category>
-      </categories>
+    <title>b_HEXO配置主题</title>
+    <url>/2022/08/14/b-HEXO%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>我的建站过程</title>
-    <url>/2022/08/11/b_%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/</url>
+    <title>b_我的建站过程</title>
+    <url>/2022/08/14/b-%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<h1 id="HEXO-GITHUB搭建网站"><a href="#HEXO-GITHUB搭建网站" class="headerlink" title="HEXO+GITHUB搭建网站"></a>HEXO+GITHUB搭建网站</h1><h2 id="搭建网站所需环境"><a href="#搭建网站所需环境" class="headerlink" title="搭建网站所需环境"></a>搭建网站所需环境</h2><h3 id="git"><a href="#git" class="headerlink" title="git"></a>git</h3><p><a href="https://git-scm.com/download/win">git下载地址</a></p>
 <h4 id="设置用户名和邮箱"><a href="#设置用户名和邮箱" class="headerlink" title="设置用户名和邮箱"></a>设置用户名和邮箱</h4><span id="more"></span>
 
@@ -39,45 +36,45 @@
 <li><p>开启端口</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 
-<img src="/2022/08/11/b_%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811172040349.png" alt="image-20220811172040349" style="zoom:80%;"></li>
+<img src="/2022/08/14/b-%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811172040349.png" alt="image-20220811172040349" style="zoom:80%;"></li>
 </ol>
 <p>​		通过localhost:4000端口就能访问到自己搭建的网站了</p>
 <h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><h3 id="生成ssh-key"><a href="#生成ssh-key" class="headerlink" title="生成ssh key"></a>生成ssh key</h3><p>1.右键打开gitbash</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;github绑定的邮箱&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>2.我的电脑进入</p>
-   <img src="/2022/08/11/b_%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811164803578.png" alt="image-20220811164803578" style="zoom: 67%;">
+   <img src="/2022/08/14/b-%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811164803578.png" alt="image-20220811164803578" style="zoom: 67%;">
 
 <p>3.ctrl+a,ctrl+c复制key</p>
-<img src="/2022/08/11/b_%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811172323830.png" alt="image-20220811172323830" style="zoom:80%;">
+<img src="/2022/08/14/b-%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811172323830.png" alt="image-20220811172323830" style="zoom:80%;">
 
 <p>4.打开github</p>
-<img src="/2022/08/11/b_%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811163518289.png" alt="image-20220811163518289" style="zoom:50%;">
+<img src="/2022/08/14/b-%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811163518289.png" alt="image-20220811163518289" style="zoom:50%;">
 
-<p>5.<img src="/2022/08/11/b_%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811164209843.png" alt="image-20220811164209843" style="zoom:50%;"></p>
+<p>5.<img src="/2022/08/14/b-%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811164209843.png" alt="image-20220811164209843" style="zoom:50%;"></p>
 <p>6.添加key</p>
-<img src="/2022/08/11/b_%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811165343200.png" alt="image-20220811165343200" style="zoom:50%;">
+<img src="/2022/08/14/b-%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811165343200.png" alt="image-20220811165343200" style="zoom:50%;">
 
 <p>7.成功！</p>
-<img src="/2022/08/11/b_%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811165425595.png" alt="image-20220811165425595" style="zoom:50%;">
+<img src="/2022/08/14/b-%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811165425595.png" alt="image-20220811165425595" style="zoom:50%;">
 
 <h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><ol>
-<li><p>​                             <img src="/2022/08/11/b_%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811165725237.png" alt="image-20220811165725237" style="zoom: 50%;"></p>
+<li><p>​                             <img src="/2022/08/14/b-%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811165725237.png" alt="image-20220811165725237" style="zoom: 50%;"></p>
 </li>
-<li><p>​                                   	  <img src="/2022/08/11/b_%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811170014012.png" alt="image-20220811170014012" style="zoom:50%;"></p>
+<li><p>​                                   	  <img src="/2022/08/14/b-%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811170014012.png" alt="image-20220811170014012" style="zoom:50%;"></p>
 </li>
 </ol>
 <p>3.复制仓库地址</p>
-<img src="/2022/08/11/b_%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811170129859.png" alt="image-20220811170129859" style="zoom:50%;">
+<img src="/2022/08/14/b-%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811170129859.png" alt="image-20220811170129859" style="zoom:50%;">
 
 <h3 id="修改-config-yml"><a href="#修改-config-yml" class="headerlink" title="修改_config.yml"></a>修改_config.yml</h3><p>1.右键vscode打开，直接到最后一行</p>
 <p>2.如下图增加修改</p>
-<img src="/2022/08/11/b_%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811170745602.png" alt="image-20220811170745602" style="zoom:80%;">
+<img src="/2022/08/14/b-%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811170745602.png" alt="image-20220811170745602" style="zoom:80%;">
 
 <h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>1.同样在github的setting页面</p>
-<img src="/2022/08/11/b_%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811204917369.png" alt="image-20220811204917369" style="zoom:80%;">
+<img src="/2022/08/14/b-%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811204917369.png" alt="image-20220811204917369" style="zoom:80%;">
 
-<p>2.创造个人访问token，记得保存<img src="/2022/08/11/b_%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811205309399.png" alt="image-20220811205309399" style="zoom:80%;"></p>
+<p>2.创造个人访问token，记得保存<img src="/2022/08/14/b-%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/image-20220811205309399.png" alt="image-20220811205309399" style="zoom:80%;"></p>
 <p>3.在blog文件夹下，右键-&gt;git bash</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
@@ -91,8 +88,8 @@
       </categories>
   </entry>
   <entry>
-    <title>c指针</title>
-    <url>/2022/08/14/c_c%E6%8C%87%E9%92%88/</url>
+    <title>c_c指针</title>
+    <url>/2022/08/14/c-c%E6%8C%87%E9%92%88/</url>
     <content><![CDATA[<h1 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h1><h2 id="指针是什么？"><a href="#指针是什么？" class="headerlink" title="指针是什么？"></a>指针是什么？</h2><h3 id="生活上的理解"><a href="#生活上的理解" class="headerlink" title="生活上的理解"></a>生活上的理解</h3><h4 id="指针-1"><a href="#指针-1" class="headerlink" title="指针"></a>指针</h4><ul>
 <li><p>像鼠标，可以指向某个东西，进行一些操作</p>
 </li>
@@ -101,7 +98,7 @@
 </ul>
 <span id="more"></span>
 
-<img src="/2022/08/14/c_c%E6%8C%87%E9%92%88/image-20220814103510192.png" alt="image-20220814103510192" style="zoom:67%;">
+<img src="/2022/08/14/c-c%E6%8C%87%E9%92%88/image-20220814103510192.png" alt="image-20220814103510192" style="zoom:67%;">
 
 <h4 id="空指针和野指针"><a href="#空指针和野指针" class="headerlink" title="空指针和野指针"></a>空指针和野指针</h4><p>拿医生来举例</p>
 <ul>
@@ -116,16 +113,15 @@
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> sun_flower = <span class="number">100</span>;</span><br><span class="line"><span class="type">int</span>* p = &amp;sun_flower; <span class="comment">//int* 类型的p指针</span></span><br></pre></td></tr></table></figure>
 
 <p><em>相当于给sun_flower创建了一个快捷方式</em></p>
-<img src="/2022/08/14/c_c%E6%8C%87%E9%92%88/image-20220814150834946.png" alt="image-20220814150834946" style="zoom:50%;">
-
+<img src="/2022/08/14/c-c%E6%8C%87%E9%92%88/image-20220814150834946.png" alt="image-20220814150834946" style="zoom:50%;">
 ]]></content>
       <categories>
         <category>c语言</category>
       </categories>
   </entry>
   <entry>
-    <title>git基础</title>
-    <url>/2022/08/12/g_git%E5%9F%BA%E7%A1%80/</url>
+    <title>g_git基础</title>
+    <url>/2022/08/14/g-git%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<h1 id="GIT"><a href="#GIT" class="headerlink" title="GIT"></a>GIT</h1><h2 id="为什么要用git？"><a href="#为什么要用git？" class="headerlink" title="为什么要用git？"></a>为什么要用git？</h2><h3 id="1-版本控制"><a href="#1-版本控制" class="headerlink" title="1.版本控制"></a>1.版本控制</h3><ul>
 <li><p>保留了一切的历史，可以让代码迅速恢复到你想commit的位置</p>
 <p>1——2——3</p>
@@ -139,13 +135,13 @@
 <li>实现跨区域多人协同开发</li>
 </ul>
 <h2 id="GIT历史"><a href="#GIT历史" class="headerlink" title="GIT历史"></a>GIT历史</h2><p>Git是免费、开源的，最初Git是为辅助 Linux 内核开发的，来替代 BitKeeper！</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812152056702.png" alt="image-20220812152056702" style="zoom:67%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812152056702.png" alt="image-20220812152056702" style="zoom:67%;">
 
 <p>Linux: linux,git之父</p>
 <h2 id="配置GIT"><a href="#配置GIT" class="headerlink" title="配置GIT"></a>配置GIT</h2><h3 id="1-下载GIT"><a href="#1-下载GIT" class="headerlink" title="1.下载GIT"></a>1.下载GIT</h3><p>打开 <a href="https://git-scm.com/">git官网</a>，下载git对应操作系统的版本。</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812153120397.png" alt="image-20220812153120397" style="zoom: 50%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812153120397.png" alt="image-20220812153120397" style="zoom: 50%;">
 
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812153940550.png" alt="image-20220812153940550" style="zoom:80%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812153940550.png" alt="image-20220812153940550" style="zoom:80%;">
 
 <p>之后无脑下一步就好了！</p>
 <h3 id="2-设置用户名和邮箱"><a href="#2-设置用户名和邮箱" class="headerlink" title="2.设置用户名和邮箱"></a>2.设置用户名和邮箱</h3><p>windows应该是微软帐号的用户名和邮箱</p>
@@ -155,7 +151,7 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
 
 <p>会出现.git文件，如果没有出现打开隐藏文件</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812162714326.png" alt="image-20220812162714326" style="zoom:67%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812162714326.png" alt="image-20220812162714326" style="zoom:67%;">
 
 <p>直接在IDE里用这个文件夹创建项目就行了</p>
 <h3 id="远程仓库搭建"><a href="#远程仓库搭建" class="headerlink" title="远程仓库搭建"></a>远程仓库搭建</h3><h4 id="1-选择托管平台"><a href="#1-选择托管平台" class="headerlink" title="1.选择托管平台"></a>1.选择托管平台</h4><ul>
@@ -168,39 +164,39 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;github绑定的邮箱&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>2.我的电脑进入</p>
-   <img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220811164803578.png" alt="image-20220811164803578" style="zoom: 67%;">
+   <img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220811164803578.png" alt="image-20220811164803578" style="zoom: 67%;">
 
 <p>3.ctrl+a,ctrl+c复制key</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220811172323830.png" alt="image-20220811172323830" style="zoom:80%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220811172323830.png" alt="image-20220811172323830" style="zoom:80%;">
 
 <p>4.打开github</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220811163518289.png" alt="image-20220811163518289" style="zoom:50%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220811163518289.png" alt="image-20220811163518289" style="zoom:50%;">
 
-<p>5.<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220811164209843.png" alt="image-20220811164209843" style="zoom:50%;"></p>
+<p>5.<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220811164209843.png" alt="image-20220811164209843" style="zoom:50%;"></p>
 <p>6.添加key</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220811165343200.png" alt="image-20220811165343200" style="zoom:50%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220811165343200.png" alt="image-20220811165343200" style="zoom:50%;">
 
 <p>7.成功！</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220811165425595.png" alt="image-20220811165425595" style="zoom:50%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220811165425595.png" alt="image-20220811165425595" style="zoom:50%;">
 
-<h4 id="3-创建github仓库"><a href="#3-创建github仓库" class="headerlink" title="3.创建github仓库"></a>3.创建github仓库</h4><p>1.<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812155226373.png" alt="image-20220812155226373" style="zoom:50%;"></p>
-<p>2.<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812155618612.png" alt="image-20220812155618612" style="zoom: 67%;"></p>
+<h4 id="3-创建github仓库"><a href="#3-创建github仓库" class="headerlink" title="3.创建github仓库"></a>3.创建github仓库</h4><p>1.<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812155226373.png" alt="image-20220812155226373" style="zoom:50%;"></p>
+<p>2.<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812155618612.png" alt="image-20220812155618612" style="zoom: 67%;"></p>
 <h4 id="4-clone仓库到要上传代码的文件夹"><a href="#4-clone仓库到要上传代码的文件夹" class="headerlink" title="4.clone仓库到要上传代码的文件夹"></a>4.clone仓库到要上传代码的文件夹</h4><p>1.进入到刚刚创建的仓库</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812160134656.png" alt="image-20220812160134656" style="zoom:67%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812160134656.png" alt="image-20220812160134656" style="zoom:67%;">
 
 <p>2.新建一个文件夹，右键git bash</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/Jameszych0/Algorithm.git</span><br></pre></td></tr></table></figure>
 
 <p>3.把文件夹的内容复制到要git的文件夹</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812160750912.png" alt="image-20220812160750912" style="zoom:67%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812160750912.png" alt="image-20220812160750912" style="zoom:67%;">
 
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812160808977.png" alt="image-20220812160808977" style="zoom:50%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812160808977.png" alt="image-20220812160808977" style="zoom:50%;">
 
 <p>这样就能使用git上传代码了！</p>
 <h2 id="GIT的基础介绍"><a href="#GIT的基础介绍" class="headerlink" title="GIT的基础介绍"></a>GIT的基础介绍</h2><h3 id="GIT基础理论"><a href="#GIT基础理论" class="headerlink" title="GIT基础理论"></a>GIT基础理论</h3><p>工作流程：———add————commit————push</p>
 <p>工作区域：工作区——&gt;暂存区——&gt;本地版本库——&gt;远程的git仓库</p>
 <p>文件状态：untracked—tracked——commit</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812221637690.png" alt="image-20220812221637690" style="zoom:80%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812221637690.png" alt="image-20220812221637690" style="zoom:80%;">
 
 <ul>
 <li><strong>工作区：</strong>就是你在电脑里能看到的目录。</li>
@@ -238,140 +234,140 @@
 <h2 id="使用GIT"><a href="#使用GIT" class="headerlink" title="使用GIT"></a>使用GIT</h2><p>接下来带你们实操一遍！</p>
 <h3 id="本地仓库"><a href="#本地仓库" class="headerlink" title="本地仓库"></a>本地仓库</h3><p>可以先使用本地仓库来实践</p>
 <h4 id="1-初始化仓库"><a href="#1-初始化仓库" class="headerlink" title="1.初始化仓库"></a>1.初始化仓库</h4><p>创建一个新文件夹，右键git bash</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812205813445.png" alt="image-20220812205813445" style="zoom: 50%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812205813445.png" alt="image-20220812205813445" style="zoom: 50%;">
 
 <h4 id="2-提交文件"><a href="#2-提交文件" class="headerlink" title="2.提交文件"></a>2.提交文件</h4><p>创建一个文本文件，并编辑一下</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812210914382.png" alt="image-20220812210914382" style="zoom: 67%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812210914382.png" alt="image-20220812210914382" style="zoom: 67%;">
 
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812211933900.png" alt="image-20220812211933900" style="zoom:67%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812211933900.png" alt="image-20220812211933900" style="zoom:67%;">
 
 <p>这个时候我们查看一下文件的状态，此时这个文件是<strong>untracked</strong></p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812213555788.png" alt="image-20220812213555788" style="zoom:67%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812213555788.png" alt="image-20220812213555788" style="zoom:67%;">
 
 <p>把文件提add暂存区，并查看文件状态</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812212520221.png" alt="image-20220812212520221" style="zoom:67%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812212520221.png" alt="image-20220812212520221" style="zoom:67%;">
 
 <p>把文件commit到本地版本库,并查看文件状态</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812212913060.png" alt="image-20220812212913060" style="zoom:67%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812212913060.png" alt="image-20220812212913060" style="zoom:67%;">
 
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812213031777.png" alt="image-20220812213031777" style="zoom: 67%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812213031777.png" alt="image-20220812213031777" style="zoom: 67%;">
 
 <h4 id="3-查看历史版本"><a href="#3-查看历史版本" class="headerlink" title="3.查看历史版本"></a>3.查看历史版本</h4><p>我们再次按照上面步骤提交一次文件，让历史版本更加鲜明</p>
 <p>PS：可用**git commit -a -m “消息内容”**省去提交到暂存区的步骤</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812215633456.png" alt="image-20220812215633456" style="zoom:67%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812215633456.png" alt="image-20220812215633456" style="zoom:67%;">
 
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812215617672.png" alt="image-20220812215617672" style="zoom:67%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812215617672.png" alt="image-20220812215617672" style="zoom:67%;">
 
 <p><strong>按q退出</strong></p>
 <h4 id="4-分支"><a href="#4-分支" class="headerlink" title="4.分支"></a>4.分支</h4><p>创建一个新的分支，并查看分支</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812223854296.png" alt="image-20220812223854296" style="zoom:67%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812223854296.png" alt="image-20220812223854296" style="zoom:67%;">
 
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812223817603.png" alt="image-20220812223817603" style="zoom:80%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812223817603.png" alt="image-20220812223817603" style="zoom:80%;">
 
 <p>切换分支，并查看文件</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812224222407.png" alt="image-20220812224222407" style="zoom: 67%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812224222407.png" alt="image-20220812224222407" style="zoom: 67%;">
 
 <p>&#x3D;&#x3D;其它分支的文件删除其它分支没有影响&#x3D;&#x3D;</p>
 <p>我们在vice分支删除文件，并**git commit -am “删除文件”**，回到主分支那个文件还在</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220813101947724.png" alt="image-20220813101947724" style="zoom:50%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220813101947724.png" alt="image-20220813101947724" style="zoom:50%;">
 
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220813102010742.png" alt="image-20220813102010742" style="zoom:50%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220813102010742.png" alt="image-20220813102010742" style="zoom:50%;">
 
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220813102024967.png" alt="image-20220813102024967" style="zoom:50%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220813102024967.png" alt="image-20220813102024967" style="zoom:50%;">
 
 <p>在vice分支修改文件，并提交</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220813094645535.png" alt="image-20220813094645535" style="zoom:67%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220813094645535.png" alt="image-20220813094645535" style="zoom:67%;">
 
 <p>我们切换到主支master，这时候master还没有这条修改，我们合并一下</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220813094852536.png" alt="image-20220813094852536" style="zoom:50%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220813094852536.png" alt="image-20220813094852536" style="zoom:50%;">
 
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220813094922538.png" alt="image-20220813094922538" style="zoom:67%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220813094922538.png" alt="image-20220813094922538" style="zoom:67%;">
 
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220813094948727.png" alt="image-20220813094948727" style="zoom:50%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220813094948727.png" alt="image-20220813094948727" style="zoom:50%;">
 
 <p>在两个分支对文件的同一行进行修改时，到merge的时候，我们需要手动修改文件，再merge</p>
-<p><img src="/git%E5%9F%BA%E7%A1%80/image-20220813095750853.png" alt="image-20220813095750853"></p>
+<p><img src="/g-git%E5%9F%BA%E7%A1%80/image-20220813095750853.png" alt="image-20220813095750853"></p>
 <p>删除分支</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812224741276.png" alt="image-20220812224741276" style="zoom:67%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812224741276.png" alt="image-20220812224741276" style="zoom:67%;">
 
 <p>最后我们再来查看一下<strong>git log</strong></p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220813100042013.png" alt="image-20220813100042013" style="zoom:80%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220813100042013.png" alt="image-20220813100042013" style="zoom:80%;">
 
 <h3 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h3><p>这里用vscode做演示</p>
 <h4 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h4><p>这里建议还是使用命令行来操作，这样无论在哪个IDE里都不需要增加学习成本</p>
 <p>和本地仓库操作差不多，这里就不做过多的演示了，主要讲一下push和pull</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812163532661.png" alt="image-20220812163532661" style="zoom:150%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812163532661.png" alt="image-20220812163532661" style="zoom:150%;">
 
 <p>我现在修改一下代码</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220812164102975.png" alt="image-20220812164102975" style="zoom:150%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220812164102975.png" alt="image-20220812164102975" style="zoom:150%;">
 
 <h4 id="查看远程仓库"><a href="#查看远程仓库" class="headerlink" title="查看远程仓库"></a>查看远程仓库</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
 
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220813103115412.png" alt="image-20220813103115412" style="zoom:67%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220813103115412.png" alt="image-20220813103115412" style="zoom:67%;">
 
 <h4 id="git-push"><a href="#git-push" class="headerlink" title="git push"></a>git push</h4><p>第一次git push需要输入帐号和个人生成token，需要我们在github上设置一下</p>
 <p>1.同样在github的setting页面</p>
-<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220811204917369.png" alt="image-20220811204917369" style="zoom:80%;">
+<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220811204917369.png" alt="image-20220811204917369" style="zoom:80%;">
 
-<p>2.创造个人访问token，记得保存<img src="/2022/08/12/g_git%E5%9F%BA%E7%A1%80/image-20220811205309399.png" alt="image-20220811205309399" style="zoom:80%;"></p>
+<p>2.创造个人访问token，记得保存<img src="/2022/08/14/g-git%E5%9F%BA%E7%A1%80/image-20220811205309399.png" alt="image-20220811205309399" style="zoom:80%;"></p>
 <h4 id="git-pull"><a href="#git-pull" class="headerlink" title="git pull"></a>git pull</h4><p>拉取远程仓库的文件</p>
 ]]></content>
       <categories>
-        <category>git</category>
+        <category>GIT</category>
       </categories>
   </entry>
   <entry>
-    <title>vscode搭建c语言环境</title>
-    <url>/2022/08/14/i_vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/</url>
+    <title>ide_vscode搭建c语言环境</title>
+    <url>/2022/08/14/ide-vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/</url>
     <content><![CDATA[<h1 id="原生方法搭建c语言环境"><a href="#原生方法搭建c语言环境" class="headerlink" title="原生方法搭建c语言环境"></a>原生方法搭建c语言环境</h1><h2 id="配置编译器环境"><a href="#配置编译器环境" class="headerlink" title="配置编译器环境"></a>配置编译器环境</h2><h3 id="下载编译器"><a href="#下载编译器" class="headerlink" title="下载编译器"></a>下载编译器</h3><p><a href="https://www.mingw-w64.org/downloads/">mingw编译器下载</a></p>
-<img src="/2022/08/14/i_vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814141642105.png" alt="image-20220814141642105" style="zoom: 50%;">
+<img src="/2022/08/14/ide-vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814141642105.png" alt="image-20220814141642105" style="zoom: 50%;">
 
 <span id="more"></span>
 
 <p>选择下载路径，下载完后复制编译器的链接 D:\software\DevTools\C\mingw64\bin</p>
 <h3 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h3><p>右键我的电脑——&gt;属性——&gt;高级系统设置</p>
-<img src="/2022/08/14/i_vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814142113535.png" alt="image-20220814142113535" style="zoom:67%;">
+<img src="/2022/08/14/ide-vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814142113535.png" alt="image-20220814142113535" style="zoom:67%;">
 
-<img src="/2022/08/14/i_vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814142408143.png" alt="image-20220814142408143" style="zoom:67%;">
+<img src="/2022/08/14/ide-vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814142408143.png" alt="image-20220814142408143" style="zoom:67%;">
 
 <p>点击编辑，将刚才复制的路径粘贴上去</p>
-<img src="/2022/08/14/i_vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814142557636.png" alt="image-20220814142557636" style="zoom:50%;">
+<img src="/2022/08/14/ide-vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814142557636.png" alt="image-20220814142557636" style="zoom:50%;">
 
 <h3 id="检查是否安装成功"><a href="#检查是否安装成功" class="headerlink" title="检查是否安装成功"></a>检查是否安装成功</h3><p>win+R输入cmd 输<code>g++ -v</code></p>
-<img src="/2022/08/14/i_vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814142909353.png" alt="image-20220814142909353" style="zoom:67%;">
+<img src="/2022/08/14/ide-vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814142909353.png" alt="image-20220814142909353" style="zoom:67%;">
 
 <p>出现这个，环境就配置好了</p>
-<h2 id="vscode设置"><a href="#vscode设置" class="headerlink" title="vscode设置"></a>vscode设置</h2><h3 id="下载vscode"><a href="#下载vscode" class="headerlink" title="下载vscode"></a>下载vscode</h3><h3 id="选择对应的版本安装"><a href="#选择对应的版本安装" class="headerlink" title="选择对应的版本安装"></a>选择对应的版本安装</h3><img src="/2022/08/14/i_vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814143505912.png" alt="image-20220814143505912" style="zoom: 50%;">
+<h2 id="vscode设置"><a href="#vscode设置" class="headerlink" title="vscode设置"></a>vscode设置</h2><h3 id="下载vscode"><a href="#下载vscode" class="headerlink" title="下载vscode"></a>下载vscode</h3><h3 id="选择对应的版本安装"><a href="#选择对应的版本安装" class="headerlink" title="选择对应的版本安装"></a>选择对应的版本安装</h3><img src="/2022/08/14/ide-vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814143505912.png" alt="image-20220814143505912" style="zoom: 50%;">
 
 <h3 id="插件的安装"><a href="#插件的安装" class="headerlink" title="插件的安装"></a>插件的安装</h3><p>搜索并安装</p>
-<img src="/2022/08/14/i_vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814143319597.png" alt="image-20220814143319597" style="zoom: 67%;">
+<img src="/2022/08/14/ide-vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814143319597.png" alt="image-20220814143319597" style="zoom: 67%;">
 
 <h3 id="配置c环境"><a href="#配置c环境" class="headerlink" title="配置c环境"></a>配置c环境</h3><p>新建c文件 <code>demo.c</code></p>
-<img src="/2022/08/14/i_vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814143700802.png" alt="image-20220814143700802" style="zoom:67%;">
+<img src="/2022/08/14/ide-vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814143700802.png" alt="image-20220814143700802" style="zoom:67%;">
 
 <p>随便写点代码</p>
-<img src="/2022/08/14/i_vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814133133241.png" alt="image-20220814133133241" style="zoom: 80%;">
+<img src="/2022/08/14/ide-vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814133133241.png" alt="image-20220814133133241" style="zoom: 80%;">
 
 <p>运行代码，生成task.json文件</p>
-<img src="/2022/08/14/i_vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814140513472.png" alt="image-20220814140513472" style="zoom:50%;">
+<img src="/2022/08/14/ide-vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814140513472.png" alt="image-20220814140513472" style="zoom:50%;">
 
 <p>生成launch.json文件</p>
-<img src="/2022/08/14/i_vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814134023888.png" alt="image-20220814134023888" style="zoom:67%;">
+<img src="/2022/08/14/ide-vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814134023888.png" alt="image-20220814134023888" style="zoom:67%;">
 
-<img src="/2022/08/14/i_vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814134102966.png" alt="image-20220814134102966" style="zoom:50%;">
+<img src="/2022/08/14/ide-vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814134102966.png" alt="image-20220814134102966" style="zoom:50%;">
 
 <p>点击添加配置，选择第三项</p>
-<img src="/2022/08/14/i_vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814134220672.png" alt="image-20220814134220672" style="zoom: 67%;">
+<img src="/2022/08/14/ide-vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814134220672.png" alt="image-20220814134220672" style="zoom: 67%;">
 
 <p>同时打开这两个文件，<strong>根据task文件</strong>，修改launch文件</p>
-<img src="/2022/08/14/i_vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814140944821.png" alt="image-20220814140944821" style="zoom: 80%;">
+<img src="/2022/08/14/ide-vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814140944821.png" alt="image-20220814140944821" style="zoom: 80%;">
 
 <p>添加每次运行，重新编译功能</p>
 <p>在launch文件下，</p>
-<img src="/2022/08/14/i_vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814141247226.png" alt="image-20220814141247226" style="zoom:67%;">
+<img src="/2022/08/14/ide-vscode%E6%90%AD%E5%BB%BAc%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/image-20220814141247226.png" alt="image-20220814141247226" style="zoom:67%;">
 ]]></content>
       <categories>
-        <category>vscode</category>
+        <category>IDE</category>
       </categories>
   </entry>
 </search>
