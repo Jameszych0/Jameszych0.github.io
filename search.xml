@@ -6,38 +6,6 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>c_c指针</title>
-    <url>/2022/08/14/c-c%E6%8C%87%E9%92%88/</url>
-    <content><![CDATA[<h1 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h1><h2 id="指针是什么？"><a href="#指针是什么？" class="headerlink" title="指针是什么？"></a>指针是什么？</h2><h3 id="生活上的理解"><a href="#生活上的理解" class="headerlink" title="生活上的理解"></a>生活上的理解</h3><h4 id="指针-1"><a href="#指针-1" class="headerlink" title="指针"></a>指针</h4><ul>
-<li><p>像鼠标，可以指向某个东西，进行一些操作</p>
-</li>
-<li><p>拿windows中的快捷方式举例，快捷方式就是<strong>指针变量</strong>，快捷方式指向的某个文件的<strong>地址</strong>就是<strong>指针</strong>，无论文件移到哪个位置，快捷方式都指向这个文件；只有当这个文件不存在时，快捷方式方式才没有用（空指针）</p>
-</li>
-</ul>
-<span id="more"></span>
-
-<img src="/2022/08/14/c-c%E6%8C%87%E9%92%88/image-20220814103510192.png" alt="image-20220814103510192" style="zoom:67%;">
-
-<h4 id="空指针和野指针"><a href="#空指针和野指针" class="headerlink" title="空指针和野指针"></a>空指针和野指针</h4><p>拿医生来举例</p>
-<ul>
-<li><p>空指针：今天没病人看了，医生是空闲的（int * p &#x3D; null）</p>
-</li>
-<li><p>野指针：医生疯了，乱找人来看病（没有设置null）</p>
-</li>
-</ul>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>* p; <span class="comment">//野指针</span></span><br><span class="line"><span class="comment">//程序这时候会随机分配，防止空指针的异常</span></span><br><span class="line"><span class="comment">//没有意义的指向</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="代码上的理解"><a href="#代码上的理解" class="headerlink" title="代码上的理解"></a>代码上的理解</h3><p>*<em>指针(<em>p)也就是内存地址，指针变量(p)是用来存放内存地址的变量</em></em></p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> sun_flower = <span class="number">100</span>;</span><br><span class="line"><span class="type">int</span>* p = &amp;sun_flower; <span class="comment">//int* 类型的p指针</span></span><br></pre></td></tr></table></figure>
-
-<p><em>相当于给sun_flower创建了一个快捷方式</em></p>
-<img src="/2022/08/14/c-c%E6%8C%87%E9%92%88/image-20220814150834946.png" alt="image-20220814150834946" style="zoom:50%;">
-]]></content>
-      <categories>
-        <category>c语言</category>
-      </categories>
-  </entry>
-  <entry>
     <title>b_我的建站过程</title>
     <url>/2022/08/14/b-%E6%88%91%E7%9A%84%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<h1 id="HEXO-GITHUB搭建网站"><a href="#HEXO-GITHUB搭建网站" class="headerlink" title="HEXO+GITHUB搭建网站"></a>HEXO+GITHUB搭建网站</h1><h2 id="搭建网站所需环境"><a href="#搭建网站所需环境" class="headerlink" title="搭建网站所需环境"></a>搭建网站所需环境</h2><h3 id="git"><a href="#git" class="headerlink" title="git"></a>git</h3><p><a href="https://git-scm.com/download/win">git下载地址</a></p>
@@ -117,6 +85,38 @@
 <h2 id="如果感觉有用的话，请作者喝个咖啡吧-bushi"><a href="#如果感觉有用的话，请作者喝个咖啡吧-bushi" class="headerlink" title="如果感觉有用的话，请作者喝个咖啡吧(bushi"></a>如果感觉有用的话，请作者喝个咖啡吧(bushi</h2>]]></content>
       <categories>
         <category>建站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>c_c指针</title>
+    <url>/2022/08/14/c-c%E6%8C%87%E9%92%88/</url>
+    <content><![CDATA[<h1 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h1><h2 id="指针是什么？"><a href="#指针是什么？" class="headerlink" title="指针是什么？"></a>指针是什么？</h2><h3 id="生活上的理解"><a href="#生活上的理解" class="headerlink" title="生活上的理解"></a>生活上的理解</h3><h4 id="指针-1"><a href="#指针-1" class="headerlink" title="指针"></a>指针</h4><ul>
+<li><p>像鼠标，可以指向某个东西，进行一些操作</p>
+</li>
+<li><p>拿windows中的快捷方式举例，快捷方式就是<strong>指针变量</strong>，快捷方式指向的某个文件的<strong>地址</strong>就是<strong>指针</strong>，无论文件移到哪个位置，快捷方式都指向这个文件；只有当这个文件不存在时，快捷方式方式才没有用（空指针）</p>
+</li>
+</ul>
+<span id="more"></span>
+
+<img src="/2022/08/14/c-c%E6%8C%87%E9%92%88/image-20220814103510192.png" alt="image-20220814103510192" style="zoom:67%;">
+
+<h4 id="空指针和野指针"><a href="#空指针和野指针" class="headerlink" title="空指针和野指针"></a>空指针和野指针</h4><p>拿医生来举例</p>
+<ul>
+<li><p>空指针：今天没病人看了，医生是空闲的（int * p &#x3D; null）</p>
+</li>
+<li><p>野指针：医生疯了，乱找人来看病（没有设置null）</p>
+</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>* p; <span class="comment">//野指针</span></span><br><span class="line"><span class="comment">//程序这时候会随机分配，防止空指针的异常</span></span><br><span class="line"><span class="comment">//没有意义的指向</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="代码上的理解"><a href="#代码上的理解" class="headerlink" title="代码上的理解"></a>代码上的理解</h3><p>*<em>指针(<em>p)也就是内存地址，指针变量(p)是用来存放内存地址的变量</em></em></p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> sun_flower = <span class="number">100</span>;</span><br><span class="line"><span class="type">int</span>* p = &amp;sun_flower; <span class="comment">//int* 类型的p指针</span></span><br></pre></td></tr></table></figure>
+
+<p><em>相当于给sun_flower创建了一个快捷方式</em></p>
+<img src="/2022/08/14/c-c%E6%8C%87%E9%92%88/image-20220814150834946.png" alt="image-20220814150834946" style="zoom:50%;">
+]]></content>
+      <categories>
+        <category>c语言</category>
       </categories>
   </entry>
   <entry>
